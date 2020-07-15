@@ -8,6 +8,7 @@ import  Accordion from './components/Accordion'
 import Wizard from './components/Wizard';
 import Footer from './components/Footer';
 import { Hidden } from '@material-ui/core';
+import Tiles from './components/Tiles';
 class App extends Component {
   state = {
     isActive: false
@@ -22,9 +23,9 @@ class App extends Component {
         <div style={{margin:"auto"}}  className="row">
         <div className="col-10">
             <TopNav></TopNav>
-            <div className="col-9">
-                <Accordion></Accordion>
-            </div>
+              <Tiles></Tiles>
+                {/* <Accordion></Accordion> */}
+    
         </div>
       <div className="col-2"><RightNav></RightNav></div>
       </div> 

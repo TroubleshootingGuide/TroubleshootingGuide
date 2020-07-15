@@ -3,7 +3,7 @@ import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 
-export class Success extends Component {
+export class Finalmessage extends Component {
   continue = e => {
     e.preventDefault();
     // PROCESS FORM //
@@ -35,4 +35,4 @@ export class Success extends Component {
   }
 }
 
-export default Success;
+export default Finalmessage;
