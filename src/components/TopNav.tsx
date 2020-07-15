@@ -22,7 +22,7 @@ const TopNav = () => {
   return (
     <div>
       <Navbar style={{background:"#2F4F4F !important"}} color="light" light expand="md">
-        <NavbarBrand href="/">Office Dev</NavbarBrand>
+        <NavbarBrand href="/">Troubleshooting Guide</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -32,25 +32,14 @@ const TopNav = () => {
             <NavItem>
               <NavLink href="/components">Basic Framework</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                ToolsInformation
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                When to use a tool
-                </DropdownItem>
-                <DropdownItem>
-                  Steps to use a tool
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="/components">ToolsInformation</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components">Steps to use a tool</NavLink>
+            </NavItem>
           </Nav>
-          <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+          <NavLink href="https://github.com/TroubleshootingGuide/TroubleshootingGuide">GitHub</NavLink>
         </Collapse>
       </Navbar>
     </div>
