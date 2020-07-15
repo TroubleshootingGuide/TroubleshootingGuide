@@ -1,6 +1,18 @@
 .App {
   text-align: center;
 }
+
+div._Card {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  margin: 5px;
+}
+
+div._Card:hover {
+box-shadow: 5px 5px 5px 5px #aaaaaa;
+}
 .Modal{
   visibility: hidden;
 }
