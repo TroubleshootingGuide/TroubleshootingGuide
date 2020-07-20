@@ -12,7 +12,7 @@ export class Wizard extends Component  {
     email: '',
     occupation: '',
     city: '',
-    bio: ''
+    bio: '',
   };
 
   // Proceed to next step

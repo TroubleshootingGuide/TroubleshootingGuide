@@ -26,7 +26,7 @@ export class Screen1 extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider className="performance_wizard">
         <>
           <Dialog 
             open

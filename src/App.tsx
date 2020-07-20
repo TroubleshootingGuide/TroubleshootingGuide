@@ -8,7 +8,22 @@ import  Accordion from './components/Accordion'
 import Wizard from './components/Wizard';
 import Footer from './components/Footer';
 import { Hidden } from '@material-ui/core';
+import {OfficeTopics} from './Office'
+import {Samples} from './Samples'
+import {Suggestions} from './Suggestions'
+import {Hotfix} from './Hotfix'
+import {Home} from './Home'
+import {Tools} from './Tools'
+import {Framework} from './Framework'
 import Tiles from './components/Tiles';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 class App extends Component {
   state = {
     isActive: false
@@ -16,26 +31,24 @@ class App extends Component {
   render()
   { const greeting = 'Welcome to React';
   return (
-    <div className="App">
-        <Jumbotron  style={{padding: "0"}}>
-        <h1 style={{color:"White" , background:"#2F4F4F"}} className="display-2">Customer Compass</h1>
-        </Jumbotron>
-        <div style={{margin:"auto"}}  className="row">
-        <div className="col-10">
-            <TopNav></TopNav>
-              <Tiles></Tiles>
-                {/* <Accordion></Accordion> */}
-    
-        </div>
-      <div className="col-2"><RightNav></RightNav></div>
-      </div> 
-      <div>
-         {/* <Wizard/> */}
-      </div>
-      <div><Footer></Footer></div>
-    </div>
+    <main>
+    <Switch>
+        <Route path="/TroubleshootingGuide" component={Home}  exact/>
+        <Route path="/TroubleshootingGuide/home" component={Home}  exact/>
+        <Route path="/TroubleshootingGuide/OfficeTopics" component={OfficeTopics} exact />
+        <Route path="/TroubleshootingGuide/SharePointTopics" component={OfficeTopics} exact/>
+        
+        <Route path="/TroubleshootingGuide/Samples" component={Samples} exact />
+        <Route path="/TroubleshootingGuide/Suggestions" component={Suggestions} />
+        <Route path="/TroubleshootingGuide/Hotfix" component={Hotfix} />
+        <Route path="/TroubleshootingGuide/Framework" component={Framework} />
+        <Route path="/TroubleshootingGuide/Tools" component={Tools} />
+    </Switch>
+</main>
   )
-  }
 }
+}
+
+
 
 export default App;

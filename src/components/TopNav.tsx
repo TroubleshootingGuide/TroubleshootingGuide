@@ -22,21 +22,18 @@ const TopNav = () => {
   return (
     <div>
       <Navbar style={{background:"#2F4F4F !important"}} color="light" light expand="md">
-        <NavbarBrand href="/">Troubleshooting Guide</NavbarBrand>
+        <NavbarBrand href="/TroubleshootingGuide">Troubleshooting Guide</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Introduction</NavLink>
+              <NavLink href="/TroubleshootingGuide/">Introduction</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components">Basic Framework</NavLink>
+              <NavLink href="/TroubleshootingGuide/Framework/">Basic Framework</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components">ToolsInformation</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components">Steps to use a tool</NavLink>
+              <NavLink href="/TroubleshootingGuide/Tools/">ToolsInformation</NavLink>
             </NavItem>
           </Nav>
           <NavLink href="https://github.com/TroubleshootingGuide/TroubleshootingGuide">GitHub</NavLink>
