@@ -33,16 +33,16 @@ class App extends Component {
   return (
     <main>
     <Switch>
-        <Route path="/TroubleshootingGuide" component={Home}  exact/>
-        <Route path="/TroubleshootingGuide/home" component={Home}  exact/>
-        <Route path="/TroubleshootingGuide/OfficeTopics" component={OfficeTopics} exact />
-        <Route path="/TroubleshootingGuide/SharePointTopics" component={OfficeTopics} exact/>
+    <Route path="/" component={Home}  exact/>
+        <Route path="/home" component={Home}  exact/>
+        <Route path="/OfficeTopics" component={OfficeTopics} exact />
+        <Route path="/SharePointTopics" component={OfficeTopics} exact/>
         
-        <Route path="/TroubleshootingGuide/Samples" component={Samples} exact />
-        <Route path="/TroubleshootingGuide/Suggestions" component={Suggestions} />
-        <Route path="/TroubleshootingGuide/Hotfix" component={Hotfix} />
-        <Route path="/TroubleshootingGuide/Framework" component={Framework} />
-        <Route path="/TroubleshootingGuide/Tools" component={Tools} />
+        <Route path="/Samples" component={Samples} exact />
+        <Route path="/Suggestions" component={Suggestions} />
+        <Route path="/Hotfix" component={Hotfix} />
+        <Route path="/Framework" component={Framework} />
+        <Route path="/Tools" component={Tools} />
     </Switch>
 </main>
   )
