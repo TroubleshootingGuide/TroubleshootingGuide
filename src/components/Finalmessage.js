@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Button } from 'react';
 import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
@@ -15,6 +15,10 @@ export class Finalmessage extends Component {
     this.props.prevStep();
   };
 
+  close = () => {
+    window.location = '/TroubleshootingGuide'; 
+  };
+
   render() {
     return (
       <MuiThemeProvider>
@@ -25,7 +29,11 @@ export class Finalmessage extends Component {
             maxWidth='sm'
           >
             <AppBar title="Success" />
-            <h3>Thank You For Your Time</h3>
+            <div>
+            <button onClick={this.close} className="close">&times;</button>
+            <h3>Thank you for your time</h3> 
+            {/* <Button/> */}
+            </div>
             <p>Please <a href="#">click here</a> to download the transcript</p>
             <p>You can reach out to MS Support for further assistance</p>
           </Dialog>

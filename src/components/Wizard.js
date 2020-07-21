@@ -6,13 +6,13 @@ import Finalmessage from './Finalmessage';
 
 export class Wizard extends Component  {
   state = {
-    step: 1,
+    step: 0,//0,//1,
     firstName: '',
     lastName: '',
     email: '',
     occupation: '',
     city: '',
-    bio: ''
+    bio: '',
   };
 
   // Proceed to next step
@@ -42,6 +42,15 @@ export class Wizard extends Component  {
     const values = { firstName, lastName, email, occupation, city, bio };
 
     switch (step) {
+      case 0:
+        return (
+          <button className="wizardButton" onClick={this.nextStep} values={values} >Try troubleshooting Wizard</button>
+          // <Screen1
+          //   nextStep={this.nextStep}
+          //   handleChange={this.handleChange}
+          //   values={values}
+          // />
+        );
       case 1:
         return (
           <Screen1
