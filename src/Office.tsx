@@ -11,9 +11,7 @@ import { Hidden } from '@material-ui/core';
 import Tiles from './components/Tiles';
 import { act } from '@testing-library/react';
 class OfficeTopics extends Component {
-  handleClick = () => {
-    console.log('this is:', this);
-  }
+  
   render()
   { 
   return (
@@ -28,13 +26,16 @@ class OfficeTopics extends Component {
             <div className="IssueLists">
             <ul>
            <li>
-            <p onClick={this.handleClick} className="primarytext">Performance Issues</p>
+            <p  className="primarytext">Performance Issues</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit aut provident at nisi accusantium sunt officiis nesciunt inventore dignissimos, assumenda cumque. Consequuntur exercitationem iusto numquam autem labore ut explicabo voluptatibus, qui quasi ipsum! Neque, amet ipsa, unde provident assumenda corrupti rerum sequi similique fuga autem veniam eaque qui iure.</p>
+            <Wizard/>
            </li>
            
            <li>
            <p className="primarytext">Addin load issues</p>
+           
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, explicabo!</p>
+            <Wizard/>
            </li>
            
            <li>
@@ -53,7 +54,7 @@ class OfficeTopics extends Component {
       </div> 
       
       <div>
-         <Wizard/>
+         
          {/* <Accordion/> */}
        
       </div>

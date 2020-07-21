@@ -18,8 +18,13 @@ li {
 }
 .IssueLists  li:hover {
   box-shadow: 5px 5px 5px 5px #aaaaaa;
-  background-color:#E8E8E8	
+  background-color: #f8f9fa;
   }
+
+.wizardButton{
+  border-radius:25px;
+  background-color: white;
+}
 
   .primarytext{
 font-size: 20px;
