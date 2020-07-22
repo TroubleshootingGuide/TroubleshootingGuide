@@ -10,10 +10,10 @@ const RightNav = () => {
           <NavLink href="/TroubleshootingGuide/Hotfix/">Hotfix information</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/TroubleshootingGuide/Suggestions/">Suggestion box</NavLink>
+          <NavLink href="/TroubleshootingGuide#/Suggestions/">Suggestion box</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/TroubleshootingGuide/Samples/">Sample code</NavLink>
+          <NavLink href="/TroubleshootingGuide#/Samples/">Sample code</NavLink>
         </NavItem>
         
       </Nav>
