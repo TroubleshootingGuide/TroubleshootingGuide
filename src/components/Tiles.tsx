@@ -17,12 +17,12 @@ const Tiles = () => {
     //give some boder and some shadow
   return (
         <Row>
-          <a href="/TroubleshootingGuide/OfficeTopics/">
+          <a href="/TroubleshootingGuide#/OfficeTopics/">
       <Card className="_Card"> 
         <CardImg top width="100%" src={Office} alt="MS Office" />
           <CardTitle>Microsoft Office</CardTitle>
       </Card></a>
-      <a href="/TroubleshootingGuide/OfficeTopics/">
+      <a href="/TroubleshootingGuide#/OfficeTopics/">
       <Card className="_Card"> 
         <CardImg top width="100%" src={Office} alt="MS Office" />
         <CardTitle>Microsoft Office Dev</CardTitle>

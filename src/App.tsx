@@ -17,7 +17,7 @@ import {Tools} from './Tools'
 import {Framework} from './Framework'
 import Tiles from './components/Tiles';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
