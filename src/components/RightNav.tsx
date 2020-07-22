@@ -7,7 +7,7 @@ const RightNav = () => {
       <p >Quick links</p>
       <Nav vertical>
         <NavItem>
-          <NavLink href="/TroubleshootingGuide/Hotfix/">Hotfix information</NavLink>
+          <NavLink href="/TroubleshootingGuide#/Hotfix/">Hotfix information</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="/TroubleshootingGuide#/Suggestions/">Suggestion box</NavLink>
