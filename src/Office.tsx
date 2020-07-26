@@ -22,16 +22,20 @@ class OfficeTopics extends Component {
         <div style={{margin:"auto"}}  className="row">
         <div className="col-10">
             <TopNav></TopNav>
-            <h2>Issues related to Office Development</h2>
+            <h2>Office Performance Issues</h2>
             <div className="IssueLists">
             <ul>
            <li>
-            <p  className="primarytext">Performance Issues</p>
+            <p  className="primarytext">VBA related performance issues</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit aut provident at nisi accusantium sunt officiis nesciunt inventore dignissimos, assumenda cumque. Consequuntur exercitationem iusto numquam autem labore ut explicabo voluptatibus, qui quasi ipsum! Neque, amet ipsa, unde provident assumenda corrupti rerum sequi similique fuga autem veniam eaque qui iure.</p>
             <Wizard/>
            </li>
-           
            <li>
+            <p  className="primarytext">VSTO related performance issues</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit aut provident at nisi accusantium sunt officiis nesciunt inventore dignissimos, assumenda cumque. Consequuntur exercitationem iusto numquam autem labore ut explicabo voluptatibus, qui quasi ipsum! Neque, amet ipsa, unde provident assumenda corrupti rerum sequi similique fuga autem veniam eaque qui iure.</p>
+            <Wizard/>
+           </li>
+           {/* <li>
            <p className="primarytext">Addin load issues</p>
            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, explicabo!</p>
@@ -45,7 +49,7 @@ class OfficeTopics extends Component {
            <li>
            <p className="primarytext">Office Web Addins</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, explicabo!</p>
-           </li>
+           </li> */}
          </ul>
          </div>
               {/* <Tiles></Tiles> */}
