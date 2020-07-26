@@ -11,7 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,Input
 } from 'reactstrap';
 
 const TopNav = () => {
@@ -25,8 +25,14 @@ const TopNav = () => {
         <NavbarBrand href="/TroubleshootingGuide#">Troubleshooting Guide</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
+        <Input style={{width:"50%", marginLeft:"20%"}}
+          type="search"
+          name="search"
+          id="exampleSearch"
+          placeholder="Tell me about your issue"
+        />
           <Nav className="mr-auto" navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="/TroubleshootingGuide#/">Introduction</NavLink>
             </NavItem>
             <NavItem>
@@ -34,7 +40,8 @@ const TopNav = () => {
             </NavItem>
             <NavItem>
               <NavLink href="/TroubleshootingGuide#/Tools/">ToolsInformation</NavLink>
-            </NavItem>
+            </NavItem> */}
+          
           </Nav>
           <NavLink href="https://github.com/TroubleshootingGuide/TroubleshootingGuide">GitHub</NavLink>
         </Collapse>

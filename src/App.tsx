@@ -16,6 +16,7 @@ import {Home} from './Home'
 import {Tools} from './Tools'
 import {Framework} from './Framework'
 import Tiles from './components/Tiles';
+import Issues from "./components/Issues";
 import {
   HashRouter as Router,
   Switch,
@@ -43,6 +44,7 @@ class App extends Component {
         <Route path="/Hotfix" component={Hotfix} />
         <Route path="/Framework" component={Framework} />
         <Route path="/Tools" component={Tools} />
+        <Route path="/Issues" component={Issues} />
     </Switch>
 </main>
   )

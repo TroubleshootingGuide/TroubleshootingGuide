@@ -7,6 +7,9 @@ li {
 .performance_wizard{
   display: none;
 }
+.hiden{
+  display: none;
+}
 .IssueLists {
   padding:5px;
 }
@@ -36,7 +39,15 @@ font-weight: 400px;
     font-size: 10px;
       }
 div._Card {
-  width: 284px;
+  width: 196px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  margin: 5px;
+}
+
+a._Card {
+  width: 196px;
   padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
