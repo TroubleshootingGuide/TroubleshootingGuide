@@ -44,7 +44,7 @@ export class Wizard extends Component  {
     switch (step) {
       case 0:
         return (
-          <button className="wizardButton" onClick={this.nextStep} values={values} >Try troubleshooting Wizard</button>
+          <button className="wizardButton" onClick={this.nextStep} values={values} >Try Wizard</button>
           // <Screen1
           //   nextStep={this.nextStep}
           //   handleChange={this.handleChange}
