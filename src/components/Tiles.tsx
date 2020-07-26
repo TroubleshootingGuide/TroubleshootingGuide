@@ -12,22 +12,26 @@ import PowerPoint from "../assets/PowerPoint.png"
 import Skype from "../assets/Skype.png"
 import Outlook from "../assets/Outlook.png"
 import Office from "../assets/Office.png"
-
+import  Issues  from "./Issues";
 const Tiles = () => {
     //give some boder and some shadow
   return (
         <Row>
-          <a href="/TroubleshootingGuide#/OfficeTopics/">
+          
       <Card className="_Card"> 
+      <a href="/TroubleshootingGuide#/Issues/">
         <CardImg top width="100%" src={Office} alt="MS Office" />
           <CardTitle>Microsoft Office</CardTitle>
-      </Card></a>
-      <a href="/TroubleshootingGuide#/OfficeTopics/">
+          </a>
+      </Card>
+      
       <Card className="_Card"> 
+      <a href="/TroubleshootingGuide#/Issues/">
         <CardImg top width="100%" src={Office} alt="MS Office" />
         <CardTitle>Microsoft Office Dev</CardTitle>
+        </a>
       </Card>
-      </a>
+      
       <Card className="_Card"> 
         <CardImg top width="100%" src={SharePoint} alt="SharePoint" />
         <CardTitle>Microsoft SharePoint</CardTitle>
