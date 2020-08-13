@@ -18,7 +18,7 @@ class Home extends Component {
   return (
     <div className="App">
         <Jumbotron  style={{padding: "0"}}>
-        <h1 style={{ color:"White" , background:"#2F4F4F"}} className="display-3">Svādhyāya (Self help)</h1>
+        <h1 style={{ color:"White" , background:"#2F4F4F"}} className="display-3">Svādhyāya</h1>
         </Jumbotron>
         <div style={{margin:"auto"}}  className="row">
         <div className="col-10">
